@@ -1,0 +1,23 @@
+{
+  "name": "@repo/monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && e,xit 1",
+    "build": "npm run build --ws --if-present",
+    "changeset": "npx @changesets/cli",
+    "version": "npx @changesets/cli version",
+    "publish": "node ./scripts/prepublish.js && npx @changesets/cli publish"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@changesets/cli": "^2.27.12",
+    "vite": "^5.4.9"
+  }
+}

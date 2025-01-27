@@ -1,0 +1,19 @@
+{
+  "name": "@repo/core",
+  "version": "2.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "./src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "directory": "dist"
+  },
+  "scripts": {
+    "build": "vite build && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
